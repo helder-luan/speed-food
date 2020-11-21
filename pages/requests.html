@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--css-->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/requests.css">
+  <link rel="stylesheet" href="../css/cart.css">
+  <link rel="stylesheet" href="../css/buttons.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="shortcut icon" href="../images/icone.png">
+  <title>Speed Food - Pedidos</title>
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="../images/logo.png" alt="Logo Speed Food">
+  </header>
+
+  <main>
+
+    <nav id="menu-nav">
+      <ul id="nav">
+        <a onclick="addClass(event)" href="#">
+          <li class="active">Início</li>
+        </a>
+        <a onclick="addClass(event)" href="infos.html">
+          <li class="">Informações</li>
+        </a>
+        <a onclick="addClass(event)" href="work-with-us.html">
+          <li class="">Tabalhe Conosco</li>
+        </a>
+      </ul>
+    </nav>
+
+    <hr>
+
+    <div id="items"></div>
+
+    <div id="buttonCart" onclick="openCart()" class="image-button">
+      <img class="arrow" src="../images/bag-empty.svg" alt="Botão">
+    </div>
+
+    <div id="cart">
+      
+      <section id="prods-cart">
+        
+        <div id="header">
+          <h1>Carrinho</h1>
+          <button id="closeCart"><img onclick="closeCart()" src="../images/icon-x-close.svg" alt="Botão Fechar"></button>
+        </div>
+        <hr>
+
+        <div id="prods-cart-area"></div>
+
+      </section>
+
+    </div>
+
+    <div id="finish">
+      <div id="loading">
+        <img id="img-loading" src="../images/loading.gif" alt="loading">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyright&copy; - 2020</p>
+    <p>CNPJ - 000.000.000.00/000-0</p>
+  </footer>
+
+  <!--scripts-->
+  <script src="../script/menunav.js"></script>
+  <script src="../script/requests.js"></script>
+</body>
+
+</html>

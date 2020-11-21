@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--css-->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/infos.css">
+  <link rel="stylesheet" href="../css/buttons.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="shortcut icon" href="../images/icone.png">
+  <title>Speed Food - Informações</title>
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="../images/logo.png" alt="Logo Speed Food">
+  </header>
+
+  <main>
+
+    <nav id="menu-nav">
+      <ul id="nav">
+        <a onclick="addClass(event)" href="requests.html">
+          <li class="">Início</li>
+        </a>
+        <a onclick="addClass(event)" href="#">
+          <li class="active">Informações</li>
+        </a>
+        <a onclick="addClass(event)" href="work-with-us.html">
+          <li class="">Tabalhe Conosco</li>
+        </a>
+      </ul>
+    </nav>
+
+    <hr>
+
+    <section class="infos">
+      <p><span>Endereço: </span> Rua, Número, Bairro, CEP, Cidade</p>
+      <p><span>Horário: </span>Segunda à Sexta - De hh:mm às hh:mm</p>
+      <p><span>Telefone: </span>Celular: (DDD) 9 9999-9999 | Fixo: (DDD) 3000-0000</p>
+
+      <hr>
+
+      <div id="avl">
+        <p>Reclamações | Sugestões | Elogios: </p>
+        <p>Nome: <input type="text" placeholder="Digite seu nome" name="nome" id="nome"></p>
+        <textarea name="avaliação" id="aval" maxlength="300"></textarea>
+        <br>
+        <button onclick="saveAval()" class="image-button">Enviar</button>
+        <h1 id="ty" class="hide">Agradeçemos a sua avaliação. Obrigado por nos escolher! &#128151;</h1>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright&copy; - 2020</p>
+    <p>CNPJ - 000.000.000.00/000-0</p>
+  </footer>
+
+  <!--scripts-->
+  <script src="../script/menunav.js"></script>
+  <script src="../script/infos.js"></script>
+</body>
+
+</html>

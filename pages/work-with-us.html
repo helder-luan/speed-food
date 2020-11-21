@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--css-->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/workWithUs.css">
+  <link rel="stylesheet" href="../css/buttons.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="shortcut icon" href="../images/icone.png">
+  <title>Speed Food - Trabalhe Conosco</title>
+</head>
+<body>
+  <header>
+    <img id="logo" src="../images/logo.png" alt="Logo Speed Food">
+  </header>
+
+  <main>
+
+    <nav id="menu-nav">
+      <ul id="nav">
+        <a onclick="addClass(event)" href="requests.html">
+          <li class="">Início</li>
+        </a>
+        <a onclick="addClass(event)" href="infos.html">
+          <li class="">Informações</li>
+        </a>
+        <a onclick="addClass(event)" href="#">
+          <li class="active">Tabalhe Conosco</li>
+        </a>
+      </ul>
+    </nav>
+
+    <hr>
+    <fieldset>
+      <legend>Candidatar-se</legend>
+      <form id="form" name="formRegister" action="" method="post">
+        <p>
+          <label for="name">
+            <h2>Nome Completo: </h2>
+          </label>
+          <input placeholder="Nome" id="name" class="input" name="name" type="text" required>
+        </p>
+
+        <p>
+          <h2>Sexo:</h2>
+          <div id="alt1" class="alternate">
+            <label for="man">Masculino: </label>
+            <input type="radio" name="sexo" id="man" class="input-radio" checked>
+  
+            <label for="wom">Feminino: </label>
+            <input type="radio" name="sexo" id="wom" class="input-radio">
+          </div>
+        </p>
+
+        <p>
+          <label for="dateBirth">
+            <h2>Data de Nascimento: </h2>
+          </label>
+          <input type="date" name="date" id="dateBirth" class="input-data-select" required> 
+        </p>
+
+        <p>
+          <label for="cpf">
+            <h2>CPF: </h2>
+          </label>
+          <input placeholder="Somente números" type="number" maxlength="11" name="cpf" id="cpf" class="input" required>
+        </p>
+
+        <p>
+          <label for="email">
+            <h2>Email: </h2>
+            <input placeholder="emaildecontato@email.com" type="email" name="email" id="email" class="input" required>
+          </label>
+        </p>
+
+        <p>
+          <label for="tel">
+            <h2>Telefone: </h2>
+            <input placeholder="(DDD 2 Dígitos) 9-0000-0000" type="number" name="tel" id="tel" class="input" required>
+          </label>
+        </p>
+
+        <p>
+          <label for="state">
+            <h2>Estado:</h2> 
+            <select name="state" id="state" class="input-data-select">
+
+              <optgroup label="Região Norte">
+                <option>Acre (AC)</option>
+                <option>Amapá (AP)</option>
+                <option>Amazonas (AM)</option>
+                <option>Pará (PA)</option>
+                <option>Rondônia (RO)</option>
+                <option>Roraima (RR)</option>
+                <option>Tocantins (TO)</option>
+              </optgroup>
+
+              <optgroup label="Região Nordeste">
+                <option>Alagoas (AL)</option>
+                <option>Bahia (BA)</option>
+                <option>Ceará (CE)</option>
+                <option>Maranhão (MA)</option>
+                <option>Paraíba (PB)</option>
+                <option>Pernambuco (PE)</option>
+                <option>Piauí (PI)</option>
+                <option>Rio Grande do Norte (RN)</option>
+                <option>Sergipe (SE)</option>
+              </optgroup>
+
+              <optgroup label="Região Centro-Oeste">
+                <option>Distrito Federal (DF)</option>
+                <option>Goiás (GO)</option>
+                <option>Mato Grosso (MT)</option>
+                <option>Mato Grosso do Sul (MS)</option>
+              </optgroup>
+
+              <optgroup label="Região Sudeste">
+                <option>Espírito Santo (ES)</option>
+                <option selected>Minas Gerais (MG)</option>
+                <option>Rio de Janeiro (RJ)</option>
+                <option>São Paulo (SP)</option>
+              </optgroup>
+
+              <optgroup label="Região Sul">
+                <option>Paraná (PR)</option>
+                <option>Rio Grande do Sul (RS)</option>
+                <option>Santa Catarina (SC)</option>
+              </optgroup>
+
+            </select>
+          </label>
+        </p>
+
+        <p>
+          <label for="town">
+            <h2>Cidade: </h2>
+            <input type="text" name="town" id="town" class="input" required>
+          </label>
+        </p>
+
+        <p>
+          <h2>Disponibilidade de horário: </h2>
+          <div id="alt2" class="alternate">
+            <p>
+              <label for="sched1">Manhã - 08:00 às 12:00: </label>
+              <input type="radio" name="schedule" id="sched1" class="input-radio" checked>
+            </p>
+
+            <p>
+              <label for="sched2">Tarde - 13:00 às 17:00: </label>
+              <input type="radio" name="schedule" id="sched2" class="input-radio">
+            </p>
+
+            <p>
+              <label for="sched3">Noite - 18:00 às 22:00: </label>
+              <input type="radio" name="schedule" id="sched3" class="input-radio">
+            </p>
+
+            <p>
+              <label for="sched4">Integral - 08:00 às 17:00: </label>
+              <input type="radio" name="schedule" id="sched4" class="input-radio">
+            </p>
+          </div>
+        </p>
+      </form>
+      <button class="image-button" onclick="register()">ENVIAR</button>
+    </fieldset>
+  </main>
+
+  <footer>
+    <p>Copyright&copy; - 2020</p>
+    <p>CNPJ - 000.000.000.00/000-0</p>
+  </footer>
+
+  <!--scripts-->
+  <script src="../script/menunav.js"></script>
+  <script src="../script/register.js"></script>
+</body>
+
+</html>
