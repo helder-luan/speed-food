@@ -1,0 +1,61 @@
+header {
+  background: url(../images/bg-image-foods-3.png);
+  object-fit: cover;
+}
+
+main h1 {
+  font-size: clamp(10px,1.83vw,1.83vw);
+  text-align: center;
+  margin: 10px 0;
+}
+
+main fieldset {
+  margin: 15px;
+  padding: 20px;
+  border: 2px solid #bc0000;
+  border-radius: 15px;
+}
+
+main fieldset legend {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+main fieldset #form p {
+  margin: 20px 0;
+}
+
+main fieldset #form h2 {
+  font-size: 20px;
+}
+
+main fieldset #form .alternate label {
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+main fieldset #form .image-button {
+  margin-bottom: 0;
+}
+
+.input {
+  background-color: #ff660037;
+  border: 1px solid #eb3636;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: clamp(10px,1.1vw,1.1vw);
+}
+
+.input-radio {
+  height: 20px;
+  width: 20px;
+}
+
+.input-data-select {
+  background-color: #ff660037;
+  border: 1px solid #eb3636;
+  border-radius: 10px;
+  padding: 10px;
+}
