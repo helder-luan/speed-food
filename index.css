@@ -1,0 +1,33 @@
+header {
+  font: normal 700 2.6vw/1.5 'Dancing Script', sans-serif;
+  background: url(../images/bg-image-foods-1.png);
+  object-fit: cover;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  text-align: center;
+  line-height: 1.5;
+}
+
+main div  {
+  margin: 30px;
+}
+
+main #slogan {
+  font-size: 2rem;
+}
+
+main #motoboy {
+  width: 48.17%;
+  height: 53.66%;
+}
+
+@media (max-width: 768px) {
+  header {
+    color: #fff;
+  }
+}

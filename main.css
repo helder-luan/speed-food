@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  background-color: #fff;
+  font-size: 10px;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+header #logo {
+  height: 10%;
+  width: 60%;
+}
+
+main hr {
+  border: 2px solid #333;
+}
+
+footer {
+  width: 100%;
+  color: #fff;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.1vw;
+}
+
+@media (max-width: 768px) {
+  footer p {
+    font-size: 1.9vw;
+  }
+}
