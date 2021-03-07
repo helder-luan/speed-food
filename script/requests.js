@@ -240,13 +240,9 @@ function closeCart() {
 
 //removes a specific item from the cart 
 function removeItem(event) {
-  //console.log(cart[event.path[3].dataset.key])
   cart.splice([event.path[3].dataset.key], 1)
-  //console.log(cart)
-  //console.log(event.path[3])
   event.path[3].remove();
   addItems();
-  //console.log(document.querySelectorAll('.prodsInfo'))
   verifyCart();
   if (cart.length > 0) {
     purchasePrice();
